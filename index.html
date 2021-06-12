@@ -4,21 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <title>Unknown Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>burgerkati portfolio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Portfolio</li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <h2>This is an empty section</h2>
+  <!-- py-3 padding on y-axis of 3 -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <!-- to move text from edge of screen instead of adding padding -->
+    <div class="container">
+      <a href="#" class="navbar-brand">Portfolio</a>
+      <!-- hamburger menu button targeting div collapse with id of navmenu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- to collapse on smaller screens -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- ms-auto margin start auto to align right -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#study" class="nav-link">Formation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Expérience professionnelle</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hobbies" class="nav-link">Centres d'intérêt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav and beginning of section starting at small breakpoint align txt at start left-->
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <!-- for flexbox on following div and h1 sm class so no flex display until it hits sm breakpoint -->
+      <!-- align items on horizontal -->
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="">
+          <h1>Developpeuse <span class="text-info"> Web </span></h1>
+          <!-- lead class to make text bigger and my for margin on y-axis -->
+          <p class="lead my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <button class="btn btn-primary btn-lg">Valider</button>
+        </div>
+        <!-- to keep img inside container w-50 to make img 50% -->
+        <img class="img-fluid w-50 d-none d-sm-block" src="assets/images/development.svg" alt="illustration of person on computer and web interface">
+      </div>
+    </div>
   </section>
+  <!-- end of first section beginning of second section -->
+  <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Restons en contact</h3>
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Saissez ici votre adresse e-mail" aria-label="Recipient's e-mail address" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary btn-lg" type="button" id="button-addon2">Valider</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
