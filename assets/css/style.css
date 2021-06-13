@@ -1,3 +1,10 @@
+/* for navbar content is necessary but empty b/c no content needed acts like ghost element */
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+/* to reduce size of input until medium breakpoint */
 @media(min-width: 768px) {
   .email-input {
     width: 50%;
